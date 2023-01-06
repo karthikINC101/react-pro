@@ -1,0 +1,95 @@
+.container {
+  .listingHeader {
+    display: flex;
+    align-items: flex-start;
+    .listTitle {
+      flex-basis: 45%;
+      .listMainTitle {
+        font-size: 22px;
+        line-height: 26px;
+        color: $navy;
+        font-weight: 700;
+        font-family: $font-1;
+      }
+      .listresults {
+        span {
+          font-size: 0.75rem;
+          line-height: 14px;
+          color: $wildblue;
+          font-size: 400;
+          font-family: $font-2;
+        }
+      }
+    }
+    .filters {
+      display: flex;
+      flex-basis: 55%;
+      justify-content: flex-end;
+      align-items: center;
+      span {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        font-family: $font-2;
+        color: $navyLight;
+        padding: 0 12px;
+      }
+      select {
+        border: 1px solid $border-color-1;
+        color: $wildblue;
+        padding: 6px;
+        option {
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 18px;
+        }
+      }
+      .view_Listing {
+        span {
+          padding-right: 0;
+        }
+        .grid,
+        .list {
+          padding: 0 0 0 5px;
+          line-height: 0 !important;
+          position: relative;
+          top: 3px;
+        }
+      }
+    }
+  }
+  .listingMainblock {
+    display: flex;
+    margin-top: 50px;
+    .mainfilterblock {
+      flex-basis: 25%;
+      .filterList {
+        .ftitle {
+          padding-bottom: 40px;
+        }
+        .fitertitle {
+          font-size: 20px;
+          line-height: 30px;
+          font-weight: 700;
+          text-decoration: underline;
+          color: $navy;
+          font-family: $font-1;
+        }
+        li {
+          display: flex;
+          align-items: center;
+          span {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 30px;
+            color: $rhythm;
+            padding-left: 5px;
+          }
+        }
+      }
+    }
+    .productblock {
+      flex-basis: 75%;
+    }
+  }
+}
